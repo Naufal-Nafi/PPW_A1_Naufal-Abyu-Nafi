@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendataan Mahasiswa</title>
+    <style>
+        body{
+            background: linear-gradient(135deg, #11FFE2, #320FA6); /* Warna gradient */
+            height: 150vh; /* Tinggi latar belakang sesuai tinggi viewport */
+            margin: 0; /* Hapus margin agar gradient mencakup seluruh latar belakang */
+            display: flex;
+            justify-content: center; /* Pusatkan konten secara horizontal */
+            font-family: Arial, sans-serif; 
+        }
+        main {
+            backdrop-filter: blur(10px); 
+            background-color: rgba(255, 255, 255, 0.95);
+            width: 700px;
+            height: 750px;
+            margin-top: 25px;
+            border-radius: 20px;
+        }
+        img {
+            margin-top: 10px;
+            margin-left: 10px;
+            float: left;
+        }
+        .text{
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        hr {
+            border: 2px solid black;
+        }
+        form {
+            margin-top: 35px;
+            margin-left: 25px;
+        }
+        button {
+            text-align: center;
+            margin-top: 25px;
+            background-color: #2bae8b;
+            color: #fff;
+            cursor: pointer;
+            padding: 5px 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="ugm.png" width="100" height="100" class="">
+        <div class="text">
+            <p>=========</p>
+            <p>FORMULIR PENDATAAN MAHASISWA</p>
+            <p>=========</p>
+        </div>
+        <hr>
+        <form>
+            <p></p>
+            <label for="fname">First name :</label>
+            <input type="text" id="fname" name="fname" required>
+            <label for="lname">Last name :</label>
+            <input type="text" id="lname" name="lname" required>
+            <p></p>
+            <label for="username">Nama Panggilan :</label>
+            <input type="text" id="username" name="username" required>
+            <p></p>
+            <label for="tanggal_lahir">Tanggal Lahir :</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+            <p></p>
+            <label for="gender">Jenis Kelamin :</label>
+            <select id="gender" name="gender">
+                <option value="Laki-Laki">Laki-Laki</option>
+                <option value="Perempuan">Perempuan</option>
+            </select>
+            <p></p>
+            <label for="alamat">Alamat :</label>
+            <textarea id="alamat" name="alamat" rows="5" cols="50"></textarea>
+            <p></p>
+            <label for="phone">No. Telepon :</label>
+            <input type="tel" id="phone" name="phone" placeholder="+62">
+            <p></p>
+            <label for="email">Email :</label>
+            <input type="email" id="email">
+            <p>Kelas : </p>
+            <input type="radio" id="A1" name="kelas" value="A1">
+            <label for="A1">A1</label><br>
+            <input type="radio" id="A2" name="kelas" value="A2">
+            <label for="A2">A2</label><br>
+            <input type="radio" id="B1" name="kelas" value="B1">
+            <label for="B1">B1</label><br>
+            <input type="radio" id="B2" name="kelas" value="B2">
+            <label for="B2">B2</label>
+            <p></p>
+            <label for="pas_foto">Pas Foto :</label>
+            <input type="file" id="pas_foto">
+            <p></p>
+            <button type="submit">Submit</button>
+            
+        </form>
+    </main>
+</body>
+</html>
