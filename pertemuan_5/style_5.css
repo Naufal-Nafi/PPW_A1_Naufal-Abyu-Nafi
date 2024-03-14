@@ -7,10 +7,12 @@ body {
   background-position: center;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .navbar {
   overflow: hidden;
   background-color: #333;
 }
+
 .navbar a {
   float: left;
   font-size: 16px;
@@ -19,10 +21,12 @@ body {
   padding: 1 4px 16px;
   text-decoration: none;
 }
+
 .dropdown {
   float: left;
   overflow: hidden;
 }
+
 .dropbtn {
   background-color: #333;
   font-size: 16px;
@@ -34,10 +38,12 @@ body {
   font-family: inherit;
   margin: 0;
 }
+
 .navbar a:hover,
 .dropdown:hover .dropbtn {
   background-color: red;
 }
+
 .dropdown-content {
   display: none;
   position: absolute;
@@ -46,6 +52,7 @@ body {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
 .dropdown-content a {
   float: none;
   color: black;
@@ -54,17 +61,21 @@ body {
   display: block;
   text-align: left;
 }
+
 .dropdown-content a:hover {
   background-color: #ddd;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 h1 {
   color: azure;
   text-align: center;
   font-family: Arial;
 }
+
 main {
   backdrop-filter: blur(30px);
   padding: 20px;
@@ -73,22 +84,27 @@ main {
   border: 2px solid rgb(4, 210, 66);
   border-radius: 15px;
 }
+
 .praktikum {
   color: #333;
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: medium;
 }
+
 .block {
   display: block;
 }
+
 .inline {
   display: inline;
 }
+
 a:link:hover {
   color: red;
   transition-duration: 0.4s;
 }
+
 .button_ {
   padding: 10px;
   border-radius: 10px;
@@ -98,40 +114,52 @@ a:link:hover {
   transition-duration: 0.4s;
   cursor: pointer;
 }
+
 .button_:hover {
   color: #2bae8b;
   background-color: #fff;
 }
+
 p.solid {
   border-style: solid;
 }
+
 p.dotted {
   border-style: dotted;
 }
+
 p.dashed {
   border-style: dashed;
 }
+
 p.double {
   border-style: double;
 }
+
 p.groove {
   border-style: groove;
 }
+
 p.ridge {
   border-style: ridge;
 }
+
 p.inset {
   border-style: inset;
 }
+
 p.outset {
   border-style: outset;
 }
+
 p.none {
   border-style: none;
 }
+
 p.hidden {
   border-style: hidden;
 }
+
 p.mix {
   border-style: dotted dashed solid double;
 }
@@ -140,6 +168,7 @@ p.mix {
   border: 2px solid black;
   padding: 10px 5px 2px 20px; /*top right bottom left*/
 }
+
 .padding-each {
     border: 1px solid black;
     padding-top: 10px;
@@ -147,10 +176,12 @@ p.mix {
     padding-bottom: 2px;
     padding-left: 20px;
 }
+
 .margin-all {
     border: 1px solid violet;
     margin: 10px 5px 2px 20px;
 }
+
 .margin-each {
     border: 1px solid black;
     margin-top: 25px;
@@ -158,41 +189,53 @@ p.mix {
     margin-bottom: 15px;
     margin-left: 25px;
 }
+
 .pa {
     border: 1px solid black;
     padding: 5px;
 }
+
 .wide {
     border: 1px solid black;
     width: 300px;
 }
+
 .narrow {
     border: 1px solid black;
     width: 50px;
 }
+
 .p {
     border: 1px solid black;
     padding: 5px;
 }
+
 .high {
     height: 300px;
 }
+
 .low {
     height: 50px;
 }
+
 .indent {
   text-indent: 20px;
 }
+
 .lspacing {
   letter-spacing: 2px;
 }
+
 .wspacing {
   word-spacing: 5px;
 }
+
 .lheight {
   line-height: 3;
 }
+
 .whites {
   white-space: nowrap;
 }
+
 
