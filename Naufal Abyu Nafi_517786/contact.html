@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        body {
+            margin: 15px;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #27ae60;
+            font-family: "Open Sans", sans-serif;
+        }
+        h1 {
+            color: white;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            gap: 5px;
+        }
+        button {
+            margin-top: 25px;
+            width: 20%;
+        }
+        input {
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Page</h1>
+    <form>
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" placeholder="Nama">
+        <label for="phone">Enter a phone number</label>
+        <input type="tel" id="phone" name="phone" placeholder="No Telp">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <label for="message">Pesan</label>
+        <textarea name="message" rows="10" cols="50" placeholder="Pesan"></textarea>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

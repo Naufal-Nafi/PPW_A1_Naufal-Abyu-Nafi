@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    background: #27ae60;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    background-color: #9b59b6;
+    display: flex;
+    gap: 30px;
+    background-color: #16713c;
+    height: 50px;
+}
+
+h1 {
+    color: #f0f0f0;
+}
+
+.nav {
+    color: #f0f0f0;
+}
+
+.nav a {
+    margin: 15px;
+}
+
+.nav__menu {
+    text-transform: uppercase;
+}
+
+.nav__menu-item {
+    padding: 20px;
+}
+
+.nav__menu-item:hover {
+    background-color: #9b59b6;
+}
+
+.nav__menu-item:hover .nav__submenu {
+    background-color: #9b59b6;
+    display: block;
+}
+
+.nav__submenu {
+    background-color: #9b59b6;
+    color: white;
+    display: none;
+    position: absolute;
+    padding: 20px;
+    z-index: 1;
+    
+}
+
+.nav__submenu-item:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+ul ul ul {
+    
+}
+
+ul ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav__subsubmenu {
+    background-color: #df7f18;
+    gap: 0;
+    float: none;
+}
+
+ul ul ul li {
+    float: none;
+    background-color: #df7f18;
+}
+
+ul ul ul li:hover {
+    background-color: #c77115;
+}
+
+ul ul {
+    display: none;
+    position: absolute;
+}

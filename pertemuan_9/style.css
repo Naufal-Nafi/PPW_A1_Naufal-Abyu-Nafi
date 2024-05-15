@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+nav {
+    margin: 10px 40px 0px 40px;
+    border-radius: 15px;
+}
+
+.navbar-toggler {
+    margin-left: 20px; 
+    border: none;
+}
+
+.navbar-toggler:hover {
+    background-color: #f3f3f8;
+    transition: 0.4s;
+}
+
+#hero {
+    background-image: url(background2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#about {
+    background-color: #e5fbdb;
+}
+
+.section-title {
+    margin: 60px;
+}
+

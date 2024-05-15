@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascipt</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <a href="#" onclick="sayHello()">klik aku (function)</a>
+    <a href="#" onclick="alert('alert onclick')">klik aku (onclick)</a>
+    <a href="javascript:alert('alert href')" >klik aku (href)</a>
+    <script>
+        function sayHello() {
+            alert("hellow (alert function)")
+        }
+        console.log("Hello World")
+        document.write("Hello world!")
+    </script>
+    <!-- embed -->
+    <script>
+        document.write("<h1>Hello World!</h1>")
+        document.write("<hr>")
+        document.write("<p>Saya sedang belajar Javascipt</p>")
+        document.write("di <b>petanikode.com</b>")
+    </script>
+
+    <h1>contoh penggunaan output</h1>
+    <div id="hasil-output"></div>
+
+    <script>
+        var hasil = document.getElementById("hasil-output")
+        hasil.innerHTML = "<h2>hasil dari innerHTML</h2>"
+    </script>
+</body>
+</html>
