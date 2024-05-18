@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascipt</title>
-</head>
-<body>
     <script src="script.js"></script>
-    <a href="#" onclick="sayHello()">klik aku (function)</a>
+</head>
+<a href="#" onclick="sayHello()">klik aku (function)</a>
+<body>
+    <!-- inline  -->
     <a href="#" onclick="alert('alert onclick')">klik aku (onclick)</a>
     <a href="javascript:alert('alert href')" >klik aku (href)</a>
+    <!-- embed -->
     <script>
         function sayHello() {
             alert("hellow (alert function)")
         }
         console.log("Hello World")
         document.write("Hello world!")
+        alert("Hello world!")
     </script>
-    <!-- embed -->
     <script>
         document.write("<h1>Hello World!</h1>")
         document.write("<hr>")
@@ -25,12 +27,12 @@
         document.write("di <b>petanikode.com</b>")
     </script>
 
-    <h1>contoh penggunaan output</h1>
+    <h1>Tutorial Javascipt untuk Pemula</h1>
     <div id="hasil-output"></div>
 
     <script>
         var hasil = document.getElementById("hasil-output")
-        hasil.innerHTML = "<h2>hasil dari innerHTML</h2>"
+        hasil.innerHTML = "<p>hasil dari innerHTML</p>"
     </script>
 </body>
 </html>
