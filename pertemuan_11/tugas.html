@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div id="content"></div>
+    </div>
+
+    <script>
+        var bil1 = prompt("Masukkan bilangan ke-1", "");
+        var bil2 = prompt("Masukkan bilangan ke-2", "");
+        if (bil1 > bil2) {
+            document.write("BILANGAN KE-1 LEBIH BESAR DARI BILANGAN KE-2");
+        }
+        if (bil2 > bil1) {
+            document.write("BILANGAN KE-2 LEBIH BESAR DARI BILANGAN KE-1");
+        } else {
+            document.write("BILANGAN SAMA BESAR");
+        }
+
+
+
+        var praktikan = confirm("Apakah anda praktikan PPW1?");
+        if (praktikan) {
+            var nama = prompt("Nama : ");
+            var nim = prompt("NIM : ");
+            var angkatan = prompt("Angkatan : ");
+            let content = `
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Nama</th>
+                                        <th>NIM</th>
+                                        <th>Angkatan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>${nama}</td>
+                                        <td>${nim}</td>
+                                        <td>${angkatan}</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        `;
+            document.getElementById("content").innerHTML = content;
+        } else {
+            document.getElementById("content").innerHTML = document.write(
+                "Anda tidak boleh masuk!"
+            );
+        }
+
+
+
+        let typeCalc = prompt("Pilih jenis kalkulator 2 angka: 1=(+)  2=(-)  3=(x)  4=(/)")
+        if (typeCalc == 1 || typeCalc == 2 || typeCalc == 3 || typeCalc == 4) {
+            let bilangan1 = parseInt(prompt("Masukkan bilangan ke-1"))
+            let bilangan2 = parseInt(prompt("Masukkan bilangan ke-2"))
+            var hasil;
+            if (typeCalc == 1) {
+                hasil = bilangan1 + bilangan2
+            } else if (typeCalc == 2) {
+                hasil = bilangan1 - bilangan2
+            } else if (typeCalc == 3) {
+                hasil = bilangan1 * bilangan2
+            } else if (typeCalc == 4){
+                hasil = bilangan1 / bilangan2
+            } else {
+                hasil = "type kalkulator tidak valid"
+            }        
+            alert("Hasil kalkulator : " + hasil )
+        } else {
+            alert("type kalkulator tidak valid")
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

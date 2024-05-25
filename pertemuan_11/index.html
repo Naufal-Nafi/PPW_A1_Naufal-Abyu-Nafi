@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        var name = "Petani Kode";
+        var visitorCount = 50322;
+        var isActive = true;
+        var url = "https://www.petanikode.com";
+
+        alert("Selamat datang di " + name)
+
+        document.write("Nama situs: " + name + "<br>")
+        document.write("Jumlah Pengunjung: " + visitorCount + "<br>")
+        document.write("Status Aktif: " + isActive + "<br>")
+        document.write("Alamat URL: " + url + "<br>")
+
+        alert("Hello World!")
+
+        confirm("Apakah anda yakin?")
+
+        var nama = prompt("Siapa nama anda?", "")
+        document.write("<p>Halo " + nama + "<p>")
+ 
+        
+
+        var yakin = confirm("apakah lanjut?")
+        if (yakin) {
+            wnidow.location("https://www.youtube.com/?hl=ID")
+        } else {
+            document.write("Oke disini saja ya")
+        }
+
+        var tanya = confirm("apakah usia anda 18 tahun keatas?")
+        var hasil = tanya ?"selamat datang" : "anda tidak boleh disini"
+        document.write(hasil)
+
+    </script>
+
+    <button onClick="alert('Tombol di klik')">alert</button>
+    
+</body>
+</html>
