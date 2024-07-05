@@ -1,0 +1,440 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  scroll-behavior: smooth;
+  --background-color: #fff;
+  --card-color: #f4f4f4;
+  --text-color: #2e2e2e;
+  --navbar-backcolor: #060420fb;
+  --footer-backcolor: #040012;
+  --accent-color: #008bf8;
+
+  --white-text: #f4f4f4;
+}
+.dark-mode {
+  --background-color: #141414;
+  --card-color: #282828;
+  --text-color: #fff;
+  --navbar-backcolor: #141414;
+}
+
+body {
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.5s, color 0.5s;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.social {
+  cursor: default;
+}
+
+.underline {
+  width: 100%;
+  max-width: 100px;
+  height: 3px;
+  background-color: var(--accent-color);
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+/* Navbar  */
+.navbar-brand,
+.offcanvas-title {
+  color: var(--white-text);
+}
+
+.navbar-brand:hover {
+  color: var(--white-text);
+}
+
+ul li a {
+  color: var(--white-text) !important;
+}
+
+ul li a:hover {
+  transition: 0.4s;
+  color: var(--accent-color) !important;
+  transform: translateY(-1px);
+}
+
+.navbar {
+  transition: all 0.5s;
+}
+
+.navbar-scrolled {
+  background-color: var(--navbar-backcolor) !important;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-toggler {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.navbar-toggler:hover {
+  background-color: #e3e3e3;
+  transition: 0.3s;
+}
+/* Navbar  */
+
+/* Hero  */
+#hero {
+  background-image: linear-gradient(rgba(1, 21, 172, 0.5), rgba(0, 0, 0, 0.5)),
+    url(images/background_hero_course.jpg);
+  border-bottom: 5px solid var(--accent-color);
+  background-size: cover;
+  background-position: center;
+}
+
+#hero img {
+  width: 350px;
+  height: auto;
+  border-radius: 25px;
+  animation: move 3s infinite;
+}
+
+.span-brand {
+  font-weight: bold;
+  background: -webkit-linear-gradient(50deg, #0400ff, #4ce3f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes move {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Hero ends  */
+
+/* Quotes  */
+#quotes {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#quotes .container {
+  background-color: var(--card-color);
+  border-radius: 20px;
+}
+
+#quotes i {
+  font-size: 2rem;
+}
+
+#quotes h5 span {
+  font-weight: bold;
+}
+
+/* Quotes end  */
+
+/* about */
+.about ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about ul li {
+  padding-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.about ul i {
+  font-size: 20px;
+  padding-right: 4px;
+}
+/* about ends */
+
+/* Courses  */
+.card {
+  color: inherit;
+  background-color: var(--card-color);
+}
+
+.card:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+#courses {
+  text-align: center;
+}
+
+#courses div {
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: var(--card-color);
+}
+/* Courses  */
+
+/* Team  */
+.team-member {
+  background-color: var(--card-color);
+  min-height: 300px;
+  border-radius: 15px;
+  transition: transform 0.6s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  border: var(--accent-color) solid 1px;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.pic {
+  overflow: hidden;
+  width: 250px;
+  border-radius: 50%;
+  /* flex-shrink: 0; */
+}
+
+.pic-1 {
+  transform: scale(1.15);
+  margin-top: 10px;
+}
+
+@media (max-width: 468px) {
+  .team .team-member {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .team .team-member .member-info {
+    padding: 30px 0 0 0;
+    text-align: center;
+    margin-left: 0px !important;
+  }
+  .pic {
+    width: 125px;
+  }
+  .pic-1 {
+    transform: scale(1);
+    margin-top: 0px;
+  }
+  #contact .social {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    min-width: 100px !important;
+    font-size: 1em;
+  }
+}
+
+.member-info h4 {
+  color: var(--accent-color);
+}
+
+.social a {
+  margin-right: 10px;
+}
+/* Team ends  */
+
+
+
+
+/* Contact  */
+/* #contact {
+  max-width: 100%;
+} */
+
+#contact .social {
+  background-color: var(--card-color);
+  border-radius: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-width: 450px;
+  font-size: 2em;
+  gap: 20px;
+}
+
+#contact .social:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+#contact .youtube:hover {
+  background-color: #FF0000;
+}
+#contact .twitter:hover {
+  background-color: #1DA1F2;
+}
+#contact .instagram:hover {
+  background: linear-gradient(10deg, #fdf497, #fd5949, #d6249f, #285AEB);;
+}
+#contact .facebook:hover {
+  background-color: #4267B2;
+}
+/* Contact ends  */
+
+
+
+
+/* Footer  */
+footer {
+  background-color: var(--footer-backcolor);
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #4e4e8b !important;
+  transition: 0.3s;
+}
+
+.copyright {
+  background-color: #060420fb;
+}
+/* Footer ends  */
+
+@media (max-width: 991px) {
+  .checkbox {
+    display: none;
+  }
+  #login-btn {
+    margin: 10px 0px 10px 0px;
+  }
+  .navbar-nav {
+    justify-content: center !important;
+  }
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .offcanvas-body ul {
+    text-align: center;
+  }
+  .offcanvas {
+    background-color: #000;
+  }
+  .btn-close {
+    background-color: #fff;
+  }
+  #hero img {
+    display: none;
+  }
+  #contact .social {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    min-width: 200px;
+    font-size: 1em;
+  }
+}
+
+/* CSS Untuk Button */
+.button {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(50deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 0.5em 1em;
+}
+
+.button:hover {
+  color: #fff;
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+/* Akhir Button */
+
+/* Toggle Darkmode  */
+/* The switch - the box around the slider */
+.switch {
+  display: block;
+  --width-of-switch: 2.5em;
+  --height-of-switch: 1.5em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 0.9em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: var(--size-of-icon, 0.9em);
+  width: var(--size-of-icon, 0.9em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #fd9401, #fffb00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #303136;
+}
+
+input:checked + .slider:before {
+  left: calc(100% - (var(--size-of-icon, 0.9em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -5px -3px 0 0 #a3dafb;
+}
